@@ -1,3 +1,6 @@
+
+<img width="1024" height="1024" alt="Gemini_Generated_Image_4jdlh44jdlh44jdl" src="https://github.com/user-attachments/assets/3e35a35f-98bf-41be-8710-22acab2b481e" />
+
 # gocache
 
 gocache is a small, educational Redis-like in-memory cache server implemented in Go. It implements a subset of the Redis protocol (RESP) and supports a few basic commands (PING, SET, GET, HSET, HGET, HGETALL). The project also includes an append-only file (AOF) persistence helper and a RESP parser/writer.
@@ -68,6 +71,10 @@ go run .
 Check `main.go` for the port and listen logic used by this repository. If `main.go` binds a port (for example :6379), you can connect with `redis-cli -p 6379` or with `nc`/`telnet` and speak RESP manually.
 
 ## Quick examples 
+
+
+https://github.com/user-attachments/assets/d46c0bc7-e48d-43c8-9030-e7f91499db4c
+
 
 
 ## Persistence (AOF)
