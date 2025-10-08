@@ -19,9 +19,12 @@ This project is intended as a learning implementation to demonstrate how a simpl
 - `aof.go` - Append-only file helper that writes marshalled RESP entries to disk and can replay them.
 - `main.go` - (entry point) expected to wire up the TCP listener, accept connections and use RESP, handlers and AOF. (See code for exact behavior.)
 
-## Architecture (Mermaid)
+## Architecture
 
-//add diagram here
+
+<img width="1955" height="612" alt="Mermaid Chart - Create complex, visual diagrams with text -2025-10-08-100226" src="https://github.com/user-attachments/assets/2bb90ef0-e024-4c1f-a4e9-14dc09d923f1" />
+
+
 
 ## RESP basics used by gocache
 
@@ -98,4 +101,4 @@ Feel free to open issues or PRs. This project is intended for learning and explo
 
 ## License
 
-This repository includes a `LICENSE` file — respect its terms when using or contributing.
+This repository includes a [LICENSE](#LICENSE) file — respect its terms when using or contributing.
