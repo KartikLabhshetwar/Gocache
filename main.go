@@ -2,9 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io"
 	"net"
-	"os"
 )
 
 func main() {
@@ -29,18 +27,16 @@ func main() {
 	defer con.Close()
 
 	for {
-		buf := make([]byte, 1024)
-
-		//reading message from client
-		_, err := con.Read(buf)
+		resp := NewResp(con)
+		value, err := resp.Read()
 		if err != nil {
-			if err == io.EOF {
-				break
-			}
-			fmt.Println("error reading from client", err.Error())
-			os.Exit(1)
+			fmt.Println(err)
+			return
 		}
 
+		fmt.Println(value)
+
+		//ignore request and send back a ok request
 		con.Write([]byte("+OK\r\n"))
 	}
 }
